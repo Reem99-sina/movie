@@ -13,12 +13,11 @@ function App() {
 
   let navigate = useNavigate()
   const [userData, setuserData] = useState(null)
-
   function getUserData() {
     let decodedDate = jwtDecode(localStorage.getItem("userToKen"))
     setuserData(decodedDate)
   }
- 
+
   function logout() {
     localStorage.removeItem('userToKen')
     setuserData(null)
@@ -53,4 +52,5 @@ function App() {
     </div>
   </>
 }
+
 export default App;
