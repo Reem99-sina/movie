@@ -43,7 +43,6 @@ function App() {
         <Route path='register' element={<Register />} />
         <Route path='movietetail' element={<MovieTetail />} >
           <Route path=':id' element={<MovieTetail />} />
-
         </Route>
 
         <Route path='*' element={<Home />} />

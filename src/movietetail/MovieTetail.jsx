@@ -11,7 +11,6 @@ export default function MovieTetail() {
     console.log(details.data)
     setDate(details.data)
     setProduct(details.data.homepage)
-
   }
   useEffect(() => getDetualt(), [])
   return (<>
